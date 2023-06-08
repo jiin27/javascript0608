@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json기초</title>
+    <script>
+        let json="{";
+        json+=" \"name\":\"jiin\", ";
+        json+="\"age\":30";
+        json+="}"; //누적돼야 하기 때문에 +=
+        
+        let obj=JSON.parse(json); //json을 문자열일 뿐이라
+
+        //js는 아래의 코드를 json표기법으로 작성할 경우, JSON 내장 객체로 parsing할 필요가 없다. 즉 자체가 json 내장 객체이다.
+        let x={
+            name: "batman",
+            age: 34
+        };
+
+        console.log(x.name);
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
